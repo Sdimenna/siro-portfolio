@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siro Leon di Menna — Consulente Applicativo | Specialista PLM/PDM</title>
+  <meta name="description" content="Consulente Applicativo specializzato in soluzioni PLM/PDM con focus su PRO.FILE. Supporto aziende manifatturiere nell'ottimizzazione dei processi tecnici, gestione BOM, integrazioni CAD e workflow basati su SQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Boot screen -->
+  <div class="boot-screen" id="bootScreen">
+    <pre class="boot-text" id="bootText"></pre>
+  </div>
+
+  <!-- Background -->
+  <div class="grid-bg"></div>
+  <div class="gradient-orb orb-1"></div>
+  <div class="gradient-orb orb-2"></div>
+  <div class="gradient-orb orb-3"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="prompt">$</span> <span class="brand-name">siro</span><span class="cursor-blink">_</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">chi sono</a></li>
+      <li><a href="#services">servizi</a></li>
+      <li><a href="#stack">competenze</a></li>
+      <li><a href="#contact">contatti</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span> disponibile per progetti
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> CONSULENTE APPLICATIVO
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-name">Siro Leon di Menna</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">></span>
+        <span class="role-text" id="roleText"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Aiuto le aziende manifatturiere ad <span class="hl">ottimizzare i processi tecnici</span> attraverso soluzioni PLM/PDM, con un focus particolare su <span class="hl-2">PRO.FILE</span>.
+        Dalla gestione delle distinte base (BOM) all'integrazione CAD, fino ai workflow basati su SQL — l'ingegneria incontra l'efficienza.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          <span>Inizializza contatto</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn btn-ghost">
+          <span>Vedi servizi</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" data-count="100">0</div>
+          <div class="stat-label">progetti ottimizzati</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="50">0</div>
+          <div class="stat-label">workflow BOM</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="24">0</div>
+          <div class="stat-label">supporto 7/7</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-terminal">
+      <div class="term-header">
+        <span class="term-dot red"></span>
+        <span class="term-dot yellow"></span>
+        <span class="term-dot green"></span>
+        <span class="term-title">~/siro.profilo</span>
+      </div>
+      <div class="term-body">
+        <div class="term-line"><span class="prompt">$</span> <span class="cmd">cat profilo.json</span></div>
+        <div class="term-output">{</div>
+        <div class="term-output">  <span class="key">"nome"</span>: <span class="str">"Siro Leon di Menna"</span>,</div>
+        <div class="term-output">  <span class="key">"ruolo"</span>: <span class="str">"Consulente Applicativo"</span>,</div>
+        <div class="term-output">  <span class="key">"ambito"</span>: <span class="str">"PLM / PDM"</span>,</div>
+        <div class="term-output">  <span class="key">"stack"</span>: <span class="str">["PRO.FILE", "CAD", "SQL"]</span>,</div>
+        <div class="term-output">  <span class="key">"disponibile"</span>: <span class="bool">true</span>,</div>
+        <div class="term-output">  <span class="key">"caffè"</span>: <span class="bool">true</span></div>
+        <div class="term-output">}</div>
+        <div class="term-line"><span class="prompt">$</span> <span class="cmd">./contattami.sh</span> <span class="cursor-blink">▮</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>● PRO.FILE</span><span>● GESTIONE BOM</span><span>● INTEGRAZIONE CAD</span><span>● SQL</span><span>● WORKFLOW</span><span>● MANIFATTURIERO</span><span>● SUPPORTO TECNICO</span><span>● DATA MODELING</span>
+      <span>● PRO.FILE</span><span>● GESTIONE BOM</span><span>● INTEGRAZIONE CAD</span><span>● SQL</span><span>● WORKFLOW</span><span>● MANIFATTURIERO</span><span>● SUPPORTO TECNICO</span><span>● DATA MODELING</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title"><span class="keyword">class</span> <span class="class-name">ChiSono</span> {</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Sono un <span class="hl">Consulente Applicativo</span> specializzato in soluzioni PLM/PDM,
+          con un focus deciso su <span class="hl-2">PRO.FILE</span> e il settore manifatturiero.
+        </p>
+        <p>
+          Supporto le aziende nell'ottimizzazione dei processi tecnici — dalla
+          <span class="keyword">gestione delle anagrafiche</span> e delle <span class="keyword">distinte base (BOM)</span>
+          alla <span class="keyword">configurazione di workflow</span> e <span class="keyword">integrazioni CAD</span>.
+        </p>
+        <p>
+          Ho maturato esperienza anche in ambito <span class="hl">IT</span>, con un utilizzo concreto di
+          <span class="hl-2">SQL</span> per l'interrogazione e la gestione dei dati, oltre a occuparmi di
+          <span class="hl-2">supporto tecnico</span> che va ben oltre il classico "hai provato a spegnerlo e riaccenderlo?".
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="card-header">
+          <span class="card-icon">◈</span>
+          <span>Attualmente</span>
+        </div>
+        <ul class="card-list">
+          <li><span class="arrow">→</span> Consulenza su progetti PLM/PDM</li>
+          <li><span class="arrow">→</span> Configurazione ambienti PRO.FILE</li>
+          <li><span class="arrow">→</span> Progettazione integrazioni CAD</li>
+          <li><span class="arrow">→</span> Realizzazione report con SQL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-end">}</div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title"><span class="keyword">const</span> <span class="class-name">servizi</span> = [</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-num">/01</div>
+        <h3>Implementazione PRO.FILE</h3>
+        <p>Deploy completo e configurazione di ambienti PRO.FILE su misura per i workflow del settore manifatturiero.</p>
+        <div class="service-tags">
+          <span>PRO.FILE</span><span>PLM</span><span>Setup</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">/02</div>
+        <h3>BOM & Anagrafiche</h3>
+        <p>Ottimizzazione delle strutture BOM, codifica articoli, classificazione e governance delle anagrafiche tecniche.</p>
+        <div class="service-tags">
+          <span>BOM</span><span>Anagrafiche</span><span>Classificazione</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">/03</div>
+        <h3>Integrazione CAD</h3>
+        <p>Integrazione fluida tra PRO.FILE e sistemi CAD per dati ingegneristici sempre sincronizzati e coerenti.</p>
+        <div class="service-tags">
+          <span>CAD</span><span>API</span><span>Sync</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">/04</div>
+        <h3>Progettazione Workflow</h3>
+        <p>Workflow personalizzati per approvazioni, rilasci e gestione delle modifiche tecniche (ECM).</p>
+        <div class="service-tags">
+          <span>Workflow</span><span>ECM</span><span>Approvazioni</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">/05</div>
+        <h3>SQL & Dati</h3>
+        <p>Interrogazione database, report personalizzati ed estrazione dati a supporto delle decisioni aziendali.</p>
+        <div class="service-tags">
+          <span>SQL</span><span>Report</span><span>Analytics</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">/06</div>
+        <h3>Supporto Tecnico</h3>
+        <p>Supporto continuativo e troubleshooting per ambienti PLM/PDM e infrastrutture IT correlate.</p>
+        <div class="service-tags">
+          <span>Supporto</span><span>Debug</span><span>IT</span>
+        </div>
+      </div>
+    </div>
+    <div class="section-end">];</div>
+  </section>
+
+  <!-- Stack -->
+  <section class="section" id="stack">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title"><span class="keyword">const</span> <span class="class-name">competenze</span> = {</h2>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-category">
+        <div class="stack-cat-title">// PLM/PDM</div>
+        <div class="stack-items">
+          <div class="stack-item"><span class="stack-name">PRO.FILE</span><span class="stack-level" data-level="95"><span></span></span></div>
+          <div class="stack-item"><span class="stack-name">Processi PLM</span><span class="stack-level" data-level="90"><span></span></span></div>
+          <div class="stack-item"><span class="stack-name">Workflow PDM</span><span class="stack-level" data-level="88"><span></span></span></div>
+        </div>
+      </div>
+      <div class="stack-category">
+        <div class="stack-cat-title">// DATI</div>
+        <div class="stack-items">
+          <div class="stack-item"><span class="stack-name">SQL</span><span class="stack-level" data-level="85"><span></span></span></div>
+          <div class="stack-item"><span class="stack-name">Modellazione DB</span><span class="stack-level" data-level="80"><span></span></span></div>
+          <div class="stack-item"><span class="stack-name">Reporting</span><span class="stack-level" data-level="82"><span></span></span></div>
+        </div>
+      </div>
+      <div class="stack-category">
+        <div class="stack-cat-title">// CAD & INGEGNERIA</div>
+        <div class="stack-items">
+          <div class="stack-item"><span class="stack-name">Integrazione CAD</span><span class="stack-level" data-level="88"><span></span></span></div>
+          <div class="stack-item"><span class="stack-name">Gestione BOM</span><span class="stack-level" data-level="92"><span></span></span></div>
+          <div class="stack-item"><span class="stack-name">Anagrafiche Tecniche</span><span class="stack-level" data-level="87"><span></span></span></div>
+        </div>
+      </div>
+      <div class="stack-category">
+        <div class="stack-cat-title">// IT</div>
+        <div class="stack-items">
+          <div class="stack-item"><span class="stack-name">Supporto Tecnico</span><span class="stack-level" data-level="90"><span></span></span></div>
+          <div class="stack-item"><span class="stack-name">System Admin</span><span class="stack-level" data-level="80"><span></span></span></div>
+          <div class="stack-item"><span class="stack-name">Problem Solving</span><span class="stack-level" data-level="92"><span></span></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-end">};</div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-contact" id="contact">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title"><span class="keyword">function</span> <span class="class-name">contattami</span>() {</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-text">
+        <p>Hai un processo manifatturiero da ottimizzare? Un progetto PRO.FILE da affrontare? Una BOM che fa impazzire tutto l'ufficio tecnico?</p>
+        <p class="contact-tag">Parliamone.</p>
+      </div>
+      <div class="contact-channels">
+        <a href="mailto:sdimenna01@gmail.com" class="channel">
+          <span class="ch-label">email</span>
+          <span class="ch-value">sdimenna01@gmail.com</span>
+          <span class="ch-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/siroleondimenna" target="_blank" rel="noopener" class="channel">
+          <span class="ch-label">linkedin</span>
+          <span class="ch-value">/in/siroleondimenna</span>
+          <span class="ch-arrow">→</span>
+        </a>
+        <a href="#" class="channel">
+          <span class="ch-label">zona</span>
+          <span class="ch-value">Italia · Disponibile in remoto</span>
+          <span class="ch-arrow">→</span>
+        </a>
+      </div>
+    </div>
+    <div class="section-end">}</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <span class="prompt">$</span> <span>echo "Costruito con codice &amp; caffè"</span>
+      </div>
+      <div class="footer-right">
+        <span id="liveTime"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
