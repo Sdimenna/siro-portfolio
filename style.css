@@ -768,6 +768,18 @@ body {
   .footer-content { flex-direction: column; gap: 10px; text-align: center; }
 }
 
+/* External link */
+.external-link {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent-2);
+  transition: all 0.2s;
+}
+.external-link:hover {
+  color: var(--accent-2);
+  border-bottom-color: var(--accent);
+}
+
 /* ============================================
    REVEAL ANIMATION
    ============================================ */
