@@ -1,31 +1,17 @@
 <!DOCTYPE html>
-<html lang="it" data-theme="light">
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Siro Leon di Menna — Application Consultant IT · PLM/PDM</title>
-  <meta name="description" content="Application Consultant IT specializzato in PLM/PDM e PRO.FILE. Background in informatica, studi in ingegneria aerospaziale. BOM, anagrafiche tecniche, integrazioni CAD, workflow e SQL per il manifatturiero." />
+  <meta name="description" content="Application Consultant IT specializzato in PLM/PDM e PRO.FILE. Background in informatica, studi in ingegneria aerospaziale. BOM, anagrafiche, integrazioni CAD, workflow e SQL per il manifatturiero." />
   <meta name="author" content="Siro Leon di Menna" />
   <meta name="keywords" content="Application Consultant, IT, PLM, PDM, PRO.FILE, BOM, distinta base, integrazione CAD, SQL, workflow, ECM, manifatturiero, ingegneria aerospaziale, informatica" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#F4F1E7" />
   <link rel="canonical" href="https://sdimenna.github.io/siro-portfolio/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-
-  <!-- Set theme before paint to avoid flash -->
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('siro-theme');
-        if (t !== 'light' && t !== 'dark') {
-          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile" />
@@ -62,26 +48,23 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <noscript><style>.js-only{display:none !important}</style></noscript>
 </head>
 <body>
 
-  <a class="skip-link" href="#top" data-i18n="a11y.skip">Vai al contenuto</a>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Vai al contenuto</a>
 
   <!-- Header -->
   <header class="site-header" id="navbar">
-    <div class="header-inner">
+    <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="Siro Leon di Menna">
-        <span class="brand-mark">SD</span>
-        <span class="brand-text">
-          <strong>Siro Leon di Menna</strong>
-          <small data-i18n="brand.role">Application Consultant · IT / PLM</small>
-        </span>
+        <span class="brand-mark" aria-hidden="true">SD</span>
+        <span class="brand-name">Siro Leon di Menna</span>
       </a>
 
-      <nav aria-label="Principale">
+      <nav class="site-nav" aria-label="Principale">
         <ul class="nav" id="navMenu">
           <li><a href="#about" data-i18n="nav.about">Chi sono</a></li>
           <li><a href="#experience" data-i18n="nav.experience">Percorso</a></li>
@@ -92,379 +75,288 @@
       </nav>
 
       <div class="header-actions">
-        <button class="icon-btn js-theme" id="themeToggle" type="button" aria-label="Attiva tema scuro">
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-        </button>
-        <button class="icon-btn lang" id="langToggle" type="button" aria-label="Switch language">EN</button>
-        <button class="btn btn-primary btn-sm js-print-cv js-only" type="button">
-          <span data-i18n="nav.cv">Scarica CV</span>
-        </button>
-        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Apri menu">
+        <button class="tbtn lang" id="langToggle" type="button" aria-label="Switch language">EN</button>
+        <button class="tbtn js-print-cv js-only" type="button" data-i18n="nav.cv">Scarica CV</button>
+        <button class="burger" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Apri menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
+    <div class="rule" aria-hidden="true"></div>
   </header>
 
-  <main id="top">
+  <main id="main">
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> <span data-i18n="hero.eyebrow">Application Consultant · IT &amp; PLM</span></p>
-        <h1 class="hero-title">Siro Leon di Menna</h1>
-        <p class="hero-role" data-i18n="hero.role">Consulente applicativo IT specializzato in PLM/PDM (PRO.FILE).</p>
-        <p class="hero-desc" data-i18n="hero.desc">
-          Background in informatica e studi in ingegneria aerospaziale. Aiuto le aziende manifatturiere
-          a digitalizzare i processi tecnici — distinte base (BOM), anagrafiche, integrazioni CAD e
-          workflow PLM — con solide basi di SQL, dati e IT.
-        </p>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div class="hero-meta">
+          <span data-i18n="hero.kicker">Application Consultant · IT &amp; PLM</span>
+          <span data-i18n="hero.zone">Italia · remoto/ibrido</span>
+          <span class="avail"><i aria-hidden="true"></i> <span data-i18n="hero.avail">Disponibile</span></span>
+        </div>
+
+        <h1 class="hero-display">Siro Leon<br>di Menna</h1>
+
+        <div class="hero-lower">
+          <p class="hero-role" data-i18n="hero.role">Consulente applicativo IT specializzato in PLM/PDM (PRO.FILE).</p>
+          <p class="hero-desc" data-i18n="hero.desc">
+            Background in informatica e studi in ingegneria aerospaziale. Aiuto le aziende manifatturiere
+            a digitalizzare i processi tecnici — distinte base (BOM), anagrafiche, integrazioni CAD e
+            workflow PLM — con solide basi di SQL, dati e IT.
+          </p>
+        </div>
+
         <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">
-            <span data-i18n="hero.cta1">Contattami</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <button class="btn btn-outline js-print-cv js-only" type="button">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
-            <span data-i18n="hero.cta2">Scarica CV</span>
-          </button>
-          <a href="https://github.com/Sdimenna" target="_blank" rel="noopener" class="btn btn-outline">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.79 2.74 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
-            GitHub
-          </a>
+          <a href="#contact" class="btn btn-solid" data-i18n="hero.cta1">Contattami</a>
+          <button class="btn btn-line js-print-cv js-only" type="button" data-i18n="hero.cta2">Scarica CV</button>
+          <a href="https://github.com/Sdimenna" target="_blank" rel="noopener" class="btn btn-line">GitHub ↗</a>
         </div>
 
         <dl class="facts">
-          <div class="fact">
-            <dt data-i18n="fact.role.label">Ruolo</dt>
-            <dd data-i18n="fact.role.value">Application Consultant</dd>
-          </div>
-          <div class="fact">
-            <dt data-i18n="fact.focus.label">Focus</dt>
-            <dd data-i18n="fact.focus.value">PLM/PDM · PRO.FILE</dd>
-          </div>
-          <div class="fact">
-            <dt data-i18n="fact.edu.label">Formazione</dt>
-            <dd data-i18n="fact.edu.value">Informatica · Ing. Aerospaziale</dd>
-          </div>
-          <div class="fact">
-            <dt data-i18n="fact.lang.label">Lingue</dt>
-            <dd data-i18n="fact.lang.value">Italiano · English</dd>
-          </div>
+          <div><dt data-i18n="fact.role.label">Ruolo</dt><dd data-i18n="fact.role.value">Application Consultant</dd></div>
+          <div><dt data-i18n="fact.focus.label">Focus</dt><dd data-i18n="fact.focus.value">PLM/PDM · PRO.FILE</dd></div>
+          <div><dt data-i18n="fact.edu.label">Formazione</dt><dd data-i18n="fact.edu.value">Informatica · Ing. Aerospaziale</dd></div>
+          <div><dt data-i18n="fact.lang.label">Lingue</dt><dd data-i18n="fact.lang.value">Italiano · English</dd></div>
         </dl>
       </div>
-
-      <aside class="profile-card" aria-label="Profilo">
-        <div class="profile-top">
-          <span class="avatar" aria-hidden="true">SD</span>
-          <div class="profile-id">
-            <strong>Siro Leon di Menna</strong>
-            <span data-i18n="profile.role">Application Consultant · PLM/PDM</span>
-          </div>
-          <span class="badge-available"><i aria-hidden="true"></i> <span data-i18n="profile.available">Disponibile</span></span>
-        </div>
-
-        <dl class="profile-rows">
-          <div><dt data-i18n="profile.company">Azienda</dt><dd><a href="https://www.mirve.it" target="_blank" rel="noopener" class="link">Mirve</a></dd></div>
-          <div><dt data-i18n="profile.focus">Focus</dt><dd>PLM / PDM · PRO.FILE</dd></div>
-          <div><dt data-i18n="profile.data">Dati</dt><dd>SQL · Reporting</dd></div>
-          <div><dt data-i18n="profile.edu">Formazione</dt><dd data-i18n="profile.eduValue">Informatica · Ing. Aerospaziale (in corso)</dd></div>
-          <div><dt data-i18n="profile.langs">Lingue</dt><dd>Italiano · English</dd></div>
-          <div><dt data-i18n="profile.zone">Zona</dt><dd data-i18n="profile.zoneValue">Italia · remoto/ibrido</dd></div>
-        </dl>
-
-        <div class="tags">
-          <span>PRO.FILE</span><span>PLM</span><span>BOM</span><span>CAD</span><span>SQL</span><span>IT</span>
-        </div>
-      </aside>
     </section>
 
-    <!-- About -->
+    <!-- 01 ABOUT -->
     <section class="section" id="about">
-      <div class="section-head">
-        <span class="section-num">01</span>
-        <h2 data-i18n="about.title">Chi sono</h2>
-      </div>
-      <div class="about-grid">
-        <div class="prose">
-          <p data-i18n-html="about.p1">
-            Sono un <strong>Application Consultant IT</strong> specializzato in soluzioni
-            <strong>PLM/PDM</strong>, con un focus deciso su <strong>PRO.FILE</strong> e il settore
-            manifatturiero.
-          </p>
-          <p data-i18n-html="about.p2">
-            Supporto le aziende nell'ottimizzazione dei processi tecnici: dalla gestione delle
-            anagrafiche e delle distinte base (BOM) alla configurazione di workflow e alle
-            integrazioni CAD.
-          </p>
-          <p data-i18n-html="about.p3">
-            Vengo da un percorso in <strong>informatica</strong> e sto proseguendo gli studi in
-            <strong>ingegneria aerospaziale</strong>: questo mix mi permette di parlare sia la lingua
-            dell'IT (SQL, dati, integrazioni) sia quella dell'ufficio tecnico (BOM, CAD, processi).
-          </p>
-          <p data-i18n-html="about.p4">
-            Attualmente opero come Application Consultant presso
-            <a href="https://www.mirve.it" target="_blank" rel="noopener" class="link">Mirve</a>,
-            dove mi occupo dell'implementazione di PRO.FILE per supportare le aziende manifatturiere
-            nella digitalizzazione dei processi tecnici.
-          </p>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-num" aria-hidden="true">01</span>
+          <h2 class="section-title" data-i18n="about.title">Chi sono</h2>
         </div>
-        <aside class="mini-card">
-          <h3 data-i18n="about.cardTitle">In sintesi</h3>
-          <ul class="check-list">
-            <li data-i18n="about.li1">Application Consultant @ Mirve</li>
-            <li data-i18n="about.li2">Consulenza su progetti PLM/PDM</li>
-            <li data-i18n="about.li3">Configurazione ambienti PRO.FILE</li>
-            <li data-i18n="about.li4">Progettazione integrazioni CAD</li>
-            <li data-i18n="about.li5">Report e analisi dati con SQL</li>
-            <li data-i18n="about.li6">Laurea in Ing. Aerospaziale (in corso)</li>
-          </ul>
-        </aside>
+        <div class="about-grid">
+          <div class="prose">
+            <p data-i18n-html="about.p1">Sono un <strong>Application Consultant IT</strong> specializzato in soluzioni <strong>PLM/PDM</strong>, con un focus deciso su <strong>PRO.FILE</strong> e il settore manifatturiero.</p>
+            <p data-i18n-html="about.p2">Supporto le aziende nell'ottimizzazione dei processi tecnici: dalla gestione delle anagrafiche e delle distinte base (BOM) alla configurazione di workflow e alle integrazioni CAD.</p>
+            <p data-i18n-html="about.p3">Vengo da un percorso in <strong>informatica</strong> e sto proseguendo gli studi in <strong>ingegneria aerospaziale</strong>: questo mix mi permette di parlare sia la lingua dell'IT (SQL, dati, integrazioni) sia quella dell'ufficio tecnico (BOM, CAD, processi).</p>
+            <p data-i18n-html="about.p4">Attualmente opero come Application Consultant presso <a href="https://www.mirve.it" target="_blank" rel="noopener" class="link">Mirve</a>, dove mi occupo dell'implementazione di PRO.FILE per supportare le aziende manifatturiere nella digitalizzazione dei processi tecnici.</p>
+          </div>
+          <aside class="meta-table" aria-label="Dati sintetici">
+            <div class="meta-row"><span data-i18n="meta.company">Azienda</span><span>Mirve</span></div>
+            <div class="meta-row"><span data-i18n="meta.role">Ruolo</span><span>Application Consultant</span></div>
+            <div class="meta-row"><span data-i18n="meta.focus">Focus</span><span>PLM / PDM · PRO.FILE</span></div>
+            <div class="meta-row"><span data-i18n="meta.data">Dati</span><span>SQL · Reporting</span></div>
+            <div class="meta-row"><span data-i18n="meta.edu">Formazione</span><span data-i18n="meta.eduValue">Informatica · Ing. Aerospaziale (in corso)</span></div>
+            <div class="meta-row"><span data-i18n="meta.langs">Lingue</span><span>Italiano · English</span></div>
+            <div class="meta-row"><span data-i18n="meta.zone">Zona</span><span data-i18n="meta.zoneValue">Italia · remoto/ibrido</span></div>
+          </aside>
+        </div>
       </div>
     </section>
 
-    <!-- Experience & Education -->
-    <section class="section section-alt" id="experience">
-      <div class="section-head">
-        <span class="section-num">02</span>
-        <h2 data-i18n="exp.title">Percorso</h2>
-      </div>
+    <!-- 02 EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="rule" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-num" aria-hidden="true">02</span>
+          <h2 class="section-title" data-i18n="exp.title">Percorso</h2>
+        </div>
 
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="timeline-dot" aria-hidden="true"></span>
-          <div class="timeline-content">
-            <div class="timeline-head">
+        <div class="rows">
+          <article class="row">
+            <div class="row-key">
+              <span class="row-period" data-i18n="exp.role1.period">in corso</span>
+              <span class="row-place" data-i18n="exp.role1.place">Italia (ibrido)</span>
+            </div>
+            <div class="row-body">
               <h3 data-i18n="exp.role1.title">Application Consultant — PLM/PDM</h3>
-              <span class="period" data-i18n="exp.role1.period">in corso</span>
+              <p class="row-org"><a href="https://www.mirve.it" target="_blank" rel="noopener" class="link">Mirve</a></p>
+              <ul class="bullets">
+                <li data-i18n="exp.role1.b1">Implementazione e configurazione di ambienti PRO.FILE per aziende manifatturiere.</li>
+                <li data-i18n="exp.role1.b2">Gestione di distinte base (BOM), anagrafiche e classificazione articoli.</li>
+                <li data-i18n="exp.role1.b3">Progettazione e setup di integrazioni tra PLM e sistemi CAD.</li>
+                <li data-i18n="exp.role1.b4">Configurazione di workflow di approvazione, rilascio e gestione modifiche (ECM).</li>
+                <li data-i18n="exp.role1.b5">Report ed estrazioni dati su SQL a supporto dell'ufficio tecnico.</li>
+              </ul>
+              <p class="tags" data-i18n="exp.role1.tags">PRO.FILE · PLM · PDM · BOM · CAD · SQL · Workflow</p>
             </div>
-            <p class="timeline-org">
-              <a href="https://www.mirve.it" target="_blank" rel="noopener" class="link">Mirve</a>
-              <span aria-hidden="true">·</span>
-              <span data-i18n="exp.role1.place">Italia (ibrido)</span>
-            </p>
-            <ul class="bullet-list">
-              <li data-i18n="exp.role1.b1">Implementazione e configurazione di ambienti PRO.FILE per aziende manifatturiere.</li>
-              <li data-i18n="exp.role1.b2">Gestione di distinte base (BOM), anagrafiche e classificazione articoli.</li>
-              <li data-i18n="exp.role1.b3">Progettazione e setup di integrazioni tra PLM e sistemi CAD.</li>
-              <li data-i18n="exp.role1.b4">Configurazione di workflow di approvazione, rilascio e gestione modifiche (ECM).</li>
-              <li data-i18n="exp.role1.b5">Report ed estrazioni dati su SQL a supporto dell'ufficio tecnico.</li>
-            </ul>
-            <div class="tags">
-              <span>PRO.FILE</span><span>PLM</span><span>PDM</span><span>BOM</span><span>CAD</span><span>SQL</span><span>Workflow</span>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="timeline-item">
-          <span class="timeline-dot" aria-hidden="true"></span>
-          <div class="timeline-content">
-            <div class="timeline-head">
+          <article class="row">
+            <div class="row-key">
+              <span class="row-period" data-i18n="exp.edu1.period">in corso</span>
+            </div>
+            <div class="row-body">
               <h3 data-i18n="exp.edu1.title">Laurea in Ingegneria Aerospaziale</h3>
-              <span class="period" data-i18n="exp.edu1.period">in corso</span>
+              <p class="row-org" data-i18n="exp.edu1.org">Università · Italia</p>
+              <p class="row-desc" data-i18n="exp.edu1.desc">Meccanica del volo, aerodinamica, strutture, sistemi.</p>
             </div>
-            <p class="timeline-org">
-              <span data-i18n="exp.edu1.org">Università · Italia</span>
-              <span aria-hidden="true">·</span>
-              <span data-i18n="exp.edu1.desc">Meccanica del volo, aerodinamica, strutture, sistemi.</span>
-            </p>
-          </div>
-        </article>
+          </article>
 
-        <article class="timeline-item">
-          <span class="timeline-dot" aria-hidden="true"></span>
-          <div class="timeline-content">
-            <div class="timeline-head">
+          <article class="row">
+            <div class="row-key">
+              <span class="row-period" data-i18n="exp.edu2.period">completato</span>
+            </div>
+            <div class="row-body">
               <h3 data-i18n="exp.edu2.title">Percorso in Informatica</h3>
-              <span class="period" data-i18n="exp.edu2.period">completato</span>
+              <p class="row-desc" data-i18n="exp.edu2.desc">Basi di programmazione, database, sistemi e reti — la solida base tecnica dietro il lavoro su PLM e dati.</p>
             </div>
-            <p class="timeline-org" data-i18n="exp.edu2.desc">
-              Basi di programmazione, database, sistemi e reti — la solida base tecnica dietro il lavoro su PLM e dati.
-            </p>
-          </div>
-        </article>
+          </article>
 
-        <article class="timeline-item">
-          <span class="timeline-dot" aria-hidden="true"></span>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3 data-i18n="exp.lang.title">Lingue</h3>
+          <article class="row">
+            <div class="row-key">
+              <span class="row-period" data-i18n="exp.lang.title">Lingue</span>
             </div>
-            <p class="timeline-org" data-i18n="exp.lang.desc">
-              Italiano (madrelingua) · Inglese (tecnico/professionale)
-            </p>
-          </div>
-        </article>
+            <div class="row-body">
+              <p class="row-desc" data-i18n="exp.lang.desc">Italiano (madrelingua) · Inglese (tecnico/professionale)</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- 03 PROJECTS -->
     <section class="section" id="projects">
-      <div class="section-head">
-        <span class="section-num">03</span>
-        <h2 data-i18n="proj.title">Progetti &amp; aree di intervento</h2>
-      </div>
-      <p class="section-sub" data-i18n="proj.note">
-        Un progetto reale in evidenza e le aree su cui lavoro ogni giorno. Alcuni dettagli sono
-        coperti da riservatezza: referenze disponibili su richiesta.
-      </p>
-
-      <!-- Featured real project -->
-      <article class="featured-project">
-        <div class="fp-visual" aria-hidden="true">
-          <div class="fp-browser">
-            <div class="fp-browser-bar">
-              <span class="fp-dot"></span><span class="fp-dot"></span><span class="fp-dot"></span>
-              <span class="fp-url">www.uniquebl.it</span>
-            </div>
-            <div class="fp-browser-body">
-              <span class="fp-logo">UB</span>
-              <span class="fp-tagline">Unique Beauty Lab</span>
-              <span class="fp-sub">La bellezza che parla di te</span>
-              <span class="fp-pill">Prenota online</span>
-            </div>
-          </div>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-num" aria-hidden="true">03</span>
+          <h2 class="section-title" data-i18n="proj.title">Progetti &amp; aree di intervento</h2>
         </div>
-        <div class="fp-body">
-          <span class="eyebrow-plain" data-i18n="proj.fp.eyebrow">Progetto in evidenza</span>
-          <h3 data-i18n="proj.fp.title">Unique Beauty Lab — sito + prenotazioni online</h3>
-          <p data-i18n="proj.fp.desc">
-            Sito web e sistema di prenotazione per un centro estetico: catalogo trattamenti con durata
-            e prezzo, scelta di giorno e ora sulle disponibilità reali, conferma e aggiunta al
-            calendario. Sviluppato end-to-end e online in produzione.
-          </p>
-          <ul class="check-list">
-            <li data-i18n="proj.fp.b1">Frontend Next.js responsive, da mobile a desktop.</li>
-            <li data-i18n="proj.fp.b2">Prenotazioni con slot realmente liberi, senza doppie prenotazioni.</li>
-            <li data-i18n="proj.fp.b3">Catalogo di 23 trattamenti divisi in 5 categorie.</li>
-            <li data-i18n="proj.fp.b4">Contatto rapido via WhatsApp e integrazione con il calendario.</li>
-          </ul>
-          <div class="tags">
-            <span>Next.js</span><span>React</span><span>Booking</span><span>Responsive</span><span>SEO</span>
-          </div>
-          <a class="link-arrow" href="https://www.uniquebl.it" target="_blank" rel="noopener">
-            <span data-i18n="proj.fp.cta">Visita il sito</span>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
-          </a>
-        </div>
-      </article>
+        <p class="section-lead" data-i18n="proj.note">Un progetto reale in evidenza e le aree su cui lavoro ogni giorno. Alcuni dettagli sono coperti da riservatezza: referenze disponibili su richiesta.</p>
 
-      <div class="cards-grid">
-        <article class="card">
-          <h3 data-i18n="proj.c1.title">Implementazione PRO.FILE</h3>
-          <p data-i18n="proj.c1.desc">Setup e configurazione completa di ambienti PRO.FILE su misura: parametrizzazione, migrazione dati, test e go-live.</p>
-          <div class="tags"><span>PRO.FILE</span><span>Setup</span><span>Migrazione</span></div>
-        </article>
-        <article class="card">
-          <h3 data-i18n="proj.c2.title">BOM &amp; Anagrafiche</h3>
-          <p data-i18n="proj.c2.desc">Strutture distinte base, codifica articoli, classificazione e governance delle anagrafiche tecniche.</p>
-          <div class="tags"><span>BOM</span><span>Anagrafiche</span><span>Classificazione</span></div>
-        </article>
-        <article class="card">
-          <h3 data-i18n="proj.c3.title">Integrazione CAD–PLM</h3>
-          <p data-i18n="proj.c3.desc">Connettori e sincronizzazione tra PRO.FILE e sistemi CAD: metadati, check-in/out e gestione versioni sempre coerenti.</p>
-          <div class="tags"><span>CAD</span><span>API</span><span>Versioning</span></div>
-        </article>
-        <article class="card">
-          <h3 data-i18n="proj.c4.title">Workflow &amp; ECM</h3>
-          <p data-i18n="proj.c4.desc">Workflow personalizzati per approvazioni, rilasci e gestione delle modifiche tecniche, con tracciabilità end-to-end.</p>
-          <div class="tags"><span>Workflow</span><span>ECM</span><span>Approvazioni</span></div>
-        </article>
-        <article class="card">
-          <h3 data-i18n="proj.c5.title">SQL &amp; Reporting</h3>
-          <p data-i18n="proj.c5.desc">Query, viste e report personalizzati su database PLM per estrarre dati affidabili e supportare le decisioni.</p>
-          <div class="tags"><span>SQL</span><span>Report</span><span>Analytics</span></div>
-        </article>
-        <article class="card">
-          <h3 data-i18n="proj.c6.title">Supporto &amp; Troubleshooting</h3>
-          <p data-i18n="proj.c6.desc">Analisi incidenti, root cause, documentazione e supporto continuativo su ambienti PLM/PDM e IT correlati.</p>
-          <div class="tags"><span>Supporto</span><span>Debug</span><span>IT</span></div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section section-alt" id="skills">
-      <div class="section-head">
-        <span class="section-num">04</span>
-        <h2 data-i18n="skills.title">Competenze</h2>
-      </div>
-      <div class="skills-grid">
-        <article class="skill-card">
-          <h3>PLM / PDM</h3>
-          <div class="tags">
-            <span>PRO.FILE</span><span data-i18n="skills.plm.1">Processi PLM</span><span data-i18n="skills.plm.2">Workflow &amp; ECM</span><span data-i18n="skills.plm.3">Gestione modifiche</span><span data-i18n="skills.plm.4">Configurazione</span>
-          </div>
-        </article>
-        <article class="skill-card">
-          <h3 data-i18n="skills.data.title">Dati</h3>
-          <div class="tags">
-            <span>SQL</span><span data-i18n="skills.data.1">Modellazione dati</span><span data-i18n="skills.data.2">Reporting</span><span data-i18n="skills.data.3">Analisi dati</span><span data-i18n="skills.data.4">Estrazione dati</span>
-          </div>
-        </article>
-        <article class="skill-card">
-          <h3 data-i18n="skills.eng.title">CAD &amp; Ingegneria</h3>
-          <div class="tags">
-            <span data-i18n="skills.eng.1">Integrazione CAD</span><span data-i18n="skills.eng.2">Gestione BOM</span><span data-i18n="skills.eng.3">Anagrafiche tecniche</span><span data-i18n="skills.eng.4">Classificazione</span>
-          </div>
-        </article>
-        <article class="skill-card">
-          <h3 data-i18n="skills.it.title">IT &amp; Soft skills</h3>
-          <div class="tags">
-            <span data-i18n="skills.it.1">Troubleshooting</span><span data-i18n="skills.it.2">System administration</span><span data-i18n="skills.it.3">Problem solving</span><span data-i18n="skills.it.4">Inglese tecnico</span><span data-i18n="skills.it.5">Documentazione</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="section-head">
-        <span class="section-num">05</span>
-        <h2 data-i18n="contact.title">Contattami</h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-text">
-          <p data-i18n="contact.text">Hai un progetto IT o PLM/PDM, un ruolo da coprire o semplicemente vuoi confrontarti? Scrivimi.</p>
-          <div class="hero-cta">
-            <a href="mailto:sdimenna01@gmail.com" class="btn btn-primary">
-              <span data-i18n="contact.cta">Scrivimi una email</span>
+        <!-- Featured -->
+        <article class="feature">
+          <figure class="feature-media">
+            <div class="browser">
+              <div class="browser-bar"><span class="browser-url">www.uniquebl.it</span></div>
+              <img src="assets/uniquebl.png" alt="Screenshot del sito Unique Beauty Lab: home con prenotazione online" width="2560" height="1600" loading="lazy" decoding="async">
+            </div>
+          </figure>
+          <div class="feature-body">
+            <span class="kicker" data-i18n="proj.fp.eyebrow">Progetto in evidenza</span>
+            <h3 data-i18n="proj.fp.title">Unique Beauty Lab — sito + prenotazioni online</h3>
+            <p data-i18n="proj.fp.desc">Sito web e sistema di prenotazione per un centro estetico: catalogo trattamenti con durata e prezzo, scelta di giorno e ora sulle disponibilità reali, conferma e aggiunta al calendario. Sviluppato end-to-end e online in produzione.</p>
+            <ul class="bullets">
+              <li data-i18n="proj.fp.b1">Frontend Next.js responsive, da mobile a desktop.</li>
+              <li data-i18n="proj.fp.b2">Prenotazioni con slot realmente liberi, senza doppie prenotazioni.</li>
+              <li data-i18n="proj.fp.b3">Catalogo di 23 trattamenti divisi in 5 categorie.</li>
+              <li data-i18n="proj.fp.b4">Contatto rapido via WhatsApp e integrazione con il calendario.</li>
+            </ul>
+            <p class="tags" data-i18n="proj.fp.tags">Next.js · React · Booking · Responsive · SEO</p>
+            <a class="link-arrow" href="https://www.uniquebl.it" target="_blank" rel="noopener">
+              <span data-i18n="proj.fp.cta">Visita il sito</span> <span aria-hidden="true">↗</span>
             </a>
-            <button class="btn btn-outline js-print-cv js-only" type="button" data-i18n="contact.ctaCv">Salva il CV in PDF</button>
+          </div>
+        </article>
+
+        <!-- Areas -->
+        <ol class="areas">
+          <li class="area">
+            <span class="area-num" aria-hidden="true">01</span>
+            <div class="area-body">
+              <h3 data-i18n="proj.c1.title">Implementazione PRO.FILE</h3>
+              <p data-i18n="proj.c1.desc">Setup e configurazione completa di ambienti PRO.FILE su misura: parametrizzazione, migrazione dati, test e go-live.</p>
+              <span class="tags" data-i18n="proj.c1.tags">PRO.FILE · Setup · Migrazione · Go-live</span>
+            </div>
+          </li>
+          <li class="area">
+            <span class="area-num" aria-hidden="true">02</span>
+            <div class="area-body">
+              <h3 data-i18n="proj.c2.title">BOM &amp; Anagrafiche</h3>
+              <p data-i18n="proj.c2.desc">Strutture distinte base, codifica articoli, classificazione e governance delle anagrafiche tecniche.</p>
+              <span class="tags" data-i18n="proj.c2.tags">BOM · Anagrafiche · Classificazione</span>
+            </div>
+          </li>
+          <li class="area">
+            <span class="area-num" aria-hidden="true">03</span>
+            <div class="area-body">
+              <h3 data-i18n="proj.c3.title">Integrazione CAD–PLM</h3>
+              <p data-i18n="proj.c3.desc">Connettori e sincronizzazione tra PRO.FILE e sistemi CAD: metadati, check-in/out e gestione versioni sempre coerenti.</p>
+              <span class="tags" data-i18n="proj.c3.tags">CAD · API · Versioning</span>
+            </div>
+          </li>
+          <li class="area">
+            <span class="area-num" aria-hidden="true">04</span>
+            <div class="area-body">
+              <h3 data-i18n="proj.c4.title">Workflow &amp; ECM</h3>
+              <p data-i18n="proj.c4.desc">Workflow personalizzati per approvazioni, rilasci e gestione delle modifiche tecniche, con tracciabilità end-to-end.</p>
+              <span class="tags" data-i18n="proj.c4.tags">Workflow · ECM · Approvazioni</span>
+            </div>
+          </li>
+          <li class="area">
+            <span class="area-num" aria-hidden="true">05</span>
+            <div class="area-body">
+              <h3 data-i18n="proj.c5.title">SQL &amp; Reporting</h3>
+              <p data-i18n="proj.c5.desc">Query, viste e report personalizzati su database PLM per estrarre dati affidabili e supportare le decisioni.</p>
+              <span class="tags" data-i18n="proj.c5.tags">SQL · Report · Analytics</span>
+            </div>
+          </li>
+          <li class="area">
+            <span class="area-num" aria-hidden="true">06</span>
+            <div class="area-body">
+              <h3 data-i18n="proj.c6.title">Supporto &amp; Troubleshooting</h3>
+              <p data-i18n="proj.c6.desc">Analisi incidenti, root cause, documentazione e supporto continuativo su ambienti PLM/PDM e IT correlati.</p>
+              <span class="tags" data-i18n="proj.c6.tags">Supporto · Debug · IT</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 04 SKILLS -->
+    <section class="section" id="skills">
+      <div class="rule" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-num" aria-hidden="true">04</span>
+          <h2 class="section-title" data-i18n="skills.title">Competenze</h2>
+        </div>
+        <div class="rows">
+          <div class="row row-skill">
+            <h3 class="row-key-label">PLM / PDM</h3>
+            <p class="skill-list" data-i18n="skills.plm.list">PRO.FILE · Processi PLM · Workflow &amp; ECM · Gestione modifiche · Configurazione</p>
+          </div>
+          <div class="row row-skill">
+            <h3 class="row-key-label" data-i18n="skills.data.title">Dati</h3>
+            <p class="skill-list" data-i18n="skills.data.list">SQL · Modellazione dati · Reporting · Analisi dati · Estrazione dati</p>
+          </div>
+          <div class="row row-skill">
+            <h3 class="row-key-label" data-i18n="skills.eng.title">CAD &amp; Ingegneria</h3>
+            <p class="skill-list" data-i18n="skills.eng.list">Integrazione CAD · Gestione BOM · Anagrafiche tecniche · Classificazione</p>
+          </div>
+          <div class="row row-skill">
+            <h3 class="row-key-label" data-i18n="skills.it.title">IT &amp; Soft skills</h3>
+            <p class="skill-list" data-i18n="skills.it.list">Troubleshooting · System administration · Problem solving · Inglese tecnico · Documentazione</p>
           </div>
         </div>
-        <div class="contact-list">
-          <a href="mailto:sdimenna01@gmail.com" class="contact-row">
-            <span class="cr-label">Email</span>
-            <span class="cr-value">sdimenna01@gmail.com</span>
-            <span class="cr-arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="https://www.linkedin.com/in/siroleondimenna" target="_blank" rel="noopener" class="contact-row">
-            <span class="cr-label">LinkedIn</span>
-            <span class="cr-value">/in/siroleondimenna</span>
-            <span class="cr-arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="https://github.com/Sdimenna" target="_blank" rel="noopener" class="contact-row">
-            <span class="cr-label">GitHub</span>
-            <span class="cr-value">@Sdimenna</span>
-            <span class="cr-arrow" aria-hidden="true">→</span>
-          </a>
-          <div class="contact-row contact-row-static">
-            <span class="cr-label" data-i18n="contact.zone">Zona</span>
-            <span class="cr-value" data-i18n="contact.zoneValue">Italia · Disponibile in remoto</span>
-            <span class="cr-arrow" aria-hidden="true">◉</span>
-          </div>
+      </div>
+    </section>
+
+    <!-- 05 CONTACT -->
+    <section class="section section-contact" id="contact">
+      <div class="wrap">
+        <div class="section-head section-head-invert">
+          <span class="section-num" aria-hidden="true">05</span>
+          <h2 class="section-title" data-i18n="contact.title">Contattami</h2>
         </div>
+        <p class="contact-display">Parliamone<span class="accent-dot">.</span></p>
+        <p class="contact-text" data-i18n="contact.text">Hai un progetto IT o PLM/PDM, un ruolo da coprire o semplicemente vuoi confrontarti? Scrivimi.</p>
+        <div class="contact-links">
+          <a href="mailto:sdimenna01@gmail.com" class="contact-link"><span>Email</span><strong>sdimenna01@gmail.com</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/siroleondimenna" target="_blank" rel="noopener" class="contact-link"><span>LinkedIn</span><strong>/in/siroleondimenna</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Sdimenna" target="_blank" rel="noopener" class="contact-link"><span>GitHub</span><strong>@Sdimenna</strong><span aria-hidden="true">↗</span></a>
+          <div class="contact-link contact-link-static"><span data-i18n="contact.zone">Zona</span><strong data-i18n="contact.zoneValue">Italia · Disponibile in remoto</strong><span aria-hidden="true">◉</span></div>
+        </div>
+        <button class="btn btn-solid js-print-cv js-only contact-cv" type="button" data-i18n="contact.ctaCv">Salva il CV in PDF</button>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      <span>Siro Leon di Menna — <span data-i18n="footer.role">Application Consultant IT · PLM/PDM</span></span>
-      <span class="footer-meta"><span id="liveTime"></span></span>
+    <div class="rule" aria-hidden="true"></div>
+    <div class="wrap footer-inner">
+      <span data-i18n="footer.role">Application Consultant IT · PLM/PDM</span>
+      <span>Siro Leon di Menna</span>
+      <span id="liveTime"></span>
     </div>
   </footer>
 
