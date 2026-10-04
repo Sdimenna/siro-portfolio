@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>og-image source</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --ground:#F4F1E7; --ink:#111111; --cobalt:#1E3FFF; --cream:#F4F1E7; --muted:#6E6857; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { width:1200px; height:630px; overflow:hidden; }
+    body {
+      font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;
+      background:var(--ground); color:var(--ink);
+      font-variant-numeric: tabular-nums;
+      display:flex; flex-direction:column; justify-content:space-between;
+      padding:56px 68px;
+    }
+    .top { display:flex; align-items:center; justify-content:space-between; }
+    .brand { display:flex; align-items:center; gap:14px; }
+    .mark {
+      width:46px; height:46px; background:var(--cobalt); color:var(--cream);
+      display:grid; place-items:center; font-weight:900; font-size:19px; letter-spacing:-.02em;
+    }
+    .brand-name { font-weight:800; font-size:17px; text-transform:uppercase; letter-spacing:.06em; }
+    .url { font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color:var(--muted); }
+
+    .name {
+      font-weight:900; text-transform:uppercase; letter-spacing:-.045em;
+      font-size:150px; line-height:.82;
+    }
+
+    .foot { border-top:1.5px solid var(--ink); padding-top:26px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .role { background:var(--cobalt); color:var(--cream); padding:13px 20px; font-weight:800; font-size:19px; text-transform:uppercase; letter-spacing:.12em; }
+    .stack { font-weight:700; font-size:19px; text-transform:uppercase; letter-spacing:.1em; }
+    .stack b { color:var(--cobalt); }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="brand">
+      <span class="mark">SD</span>
+      <span class="brand-name">Siro Leon di Menna</span>
+    </div>
+    <span class="url">sdimenna.github.io/siro-portfolio</span>
+  </div>
+
+  <h1 class="name">Siro Leon<br>di Menna</h1>
+
+  <div class="foot">
+    <span class="role">Application Consultant</span>
+    <span class="stack"><b>IT</b> · PLM/PDM · PRO.FILE · SQL &amp; C#</span>
+  </div>
+</body>
+</html>
