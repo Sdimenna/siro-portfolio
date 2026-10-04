@@ -1,56 +1,65 @@
 /* ============================================
-   SIRO LEON DI MENNA — Portfolio v3.0
-   Bilingual (IT/EN) · accessible · no dependencies
+   SIRO LEON DI MENNA — Portfolio v4
+   Light/Dark · Bilingual IT/EN · no dependencies
    ============================================ */
 
 /* ---------------- i18n DICTIONARY ---------------- */
 const I18N = {
   it: {
-    metaTitle: `Siro Leon di Menna — Application Consultant PLM/PDM · PRO.FILE`,
-    metaDesc: `Application Consultant PLM/PDM specializzato in PRO.FILE. Background in informatica e studi in ingegneria aerospaziale. BOM, anagrafiche tecniche, integrazioni CAD, workflow e SQL per il manifatturiero.`,
-    roles: [
-      `Consulente Applicativo`,
-      `Specialista PLM/PDM`,
-      `Esperto PRO.FILE`,
-      `Gestione BOM & Anagrafiche`,
-      `Integrazione CAD`,
-      `SQL & Reporting`,
-      `Studente di Ing. Aerospaziale`
-    ],
+    metaTitle: `Siro Leon di Menna — Application Consultant IT · PLM/PDM`,
+    metaDesc: `Application Consultant IT specializzato in PLM/PDM e PRO.FILE. Background in informatica, studi in ingegneria aerospaziale. BOM, anagrafiche, integrazioni CAD, workflow e SQL per il manifatturiero.`,
     "a11y.skip": `Vai al contenuto`,
-    "boot.skip": `[ premi per saltare ]`,
-    "nav.about": `chi sono`,
-    "nav.experience": `esperienza`,
-    "nav.projects": `progetti`,
-    "nav.skills": `competenze`,
-    "nav.contact": `contatti`,
-    "nav.status": `aperto a opportunità`,
-    "hero.badge": `APPLICATION CONSULTANT · PLM/PDM · @ MIRVE`,
-    "hero.desc": `Consulente applicativo <span class="hl">PLM/PDM</span> con background in <span class="hl-2">informatica</span> e studi in <span class="hl-2">ingegneria aerospaziale</span>. Aiuto le aziende manifatturiere a digitalizzare i processi tecnici — distinte base (BOM), anagrafiche, integrazioni CAD e workflow PLM — con solide basi di SQL e IT.`,
-    "hero.cta1": `Parliamone`,
-    "hero.cta2": `Vedi esperienza`,
-    "hero.cta3": `CV in PDF`,
-    "fact.formation.label": `Formazione`,
-    "fact.formation.value": `Informatica · Ing. Aerospaziale`,
+    "a11y.themeDark": `Attiva tema scuro`,
+    "a11y.themeLight": `Attiva tema chiaro`,
+
+    "brand.role": `Application Consultant · IT / PLM`,
+    "nav.about": `Chi sono`,
+    "nav.experience": `Percorso`,
+    "nav.projects": `Progetti`,
+    "nav.skills": `Competenze`,
+    "nav.contact": `Contatti`,
+    "nav.cv": `Scarica CV`,
+
+    "hero.eyebrow": `Application Consultant · IT & PLM`,
+    "hero.role": `Consulente applicativo IT specializzato in PLM/PDM (PRO.FILE).`,
+    "hero.desc": `Background in informatica e studi in ingegneria aerospaziale. Aiuto le aziende manifatturiere a digitalizzare i processi tecnici — distinte base (BOM), anagrafiche, integrazioni CAD e workflow PLM — con solide basi di SQL, dati e IT.`,
+    "hero.cta1": `Contattami`,
+    "hero.cta2": `Scarica CV`,
+
+    "fact.role.label": `Ruolo`,
+    "fact.role.value": `Application Consultant`,
     "fact.focus.label": `Focus`,
     "fact.focus.value": `PLM/PDM · PRO.FILE`,
-    "fact.data.label": `Dati`,
-    "fact.data.value": `SQL · Reporting`,
+    "fact.edu.label": `Formazione`,
+    "fact.edu.value": `Informatica · Ing. Aerospaziale`,
     "fact.lang.label": `Lingue`,
     "fact.lang.value": `Italiano · English`,
-    "about.title": `<span class="keyword">class</span> <span class="class-name">ChiSono</span> {`,
-    "about.p1": `Sono un <span class="hl">Application Consultant</span> specializzato in soluzioni <span class="hl">PLM/PDM</span>, con un focus deciso su <span class="hl-2">PRO.FILE</span> e il settore manifatturiero.`,
-    "about.p2": `Supporto le aziende nell'ottimizzazione dei processi tecnici: dalla <span class="keyword">gestione delle anagrafiche</span> e delle <span class="keyword">distinte base (BOM)</span> alla <span class="keyword">configurazione di workflow</span> e alle <span class="keyword">integrazioni CAD</span>.`,
-    "about.p3": `Vengo da un percorso in <span class="hl-2">informatica</span> e sto proseguendo gli studi in <span class="hl-2">ingegneria aerospaziale</span>: questo mix mi permette di parlare sia la lingua dell'IT (SQL, dati, integrazioni) sia quella dell'ufficio tecnico (BOM, CAD, processi).`,
-    "about.p4": `Attualmente opero come <span class="hl">Application Consultant</span> presso <a href="https://www.mirve.it" target="_blank" rel="noopener" class="external-link">Mirve</a>, dove mi occupo dell'implementazione di PRO.FILE per supportare le aziende manifatturiere nella digitalizzazione dei processi tecnici.`,
-    "about.cardTitle": `Attualmente`,
+
+    "profile.role": `Application Consultant · PLM/PDM`,
+    "profile.available": `Disponibile`,
+    "profile.company": `Azienda`,
+    "profile.focus": `Focus`,
+    "profile.data": `Dati`,
+    "profile.edu": `Formazione`,
+    "profile.eduValue": `Informatica · Ing. Aerospaziale (in corso)`,
+    "profile.langs": `Lingue`,
+    "profile.zone": `Zona`,
+    "profile.zoneValue": `Italia · remoto/ibrido`,
+
+    "about.title": `Chi sono`,
+    "about.p1": `Sono un <strong>Application Consultant IT</strong> specializzato in soluzioni <strong>PLM/PDM</strong>, con un focus deciso su <strong>PRO.FILE</strong> e il settore manifatturiero.`,
+    "about.p2": `Supporto le aziende nell'ottimizzazione dei processi tecnici: dalla gestione delle anagrafiche e delle distinte base (BOM) alla configurazione di workflow e alle integrazioni CAD.`,
+    "about.p3": `Vengo da un percorso in <strong>informatica</strong> e sto proseguendo gli studi in <strong>ingegneria aerospaziale</strong>: questo mix mi permette di parlare sia la lingua dell'IT (SQL, dati, integrazioni) sia quella dell'ufficio tecnico (BOM, CAD, processi).`,
+    "about.p4": `Attualmente opero come Application Consultant presso <a href="https://www.mirve.it" target="_blank" rel="noopener" class="link">Mirve</a>, dove mi occupo dell'implementazione di PRO.FILE per supportare le aziende manifatturiere nella digitalizzazione dei processi tecnici.`,
+    "about.cardTitle": `In sintesi`,
     "about.li1": `Application Consultant @ Mirve`,
     "about.li2": `Consulenza su progetti PLM/PDM`,
     "about.li3": `Configurazione ambienti PRO.FILE`,
     "about.li4": `Progettazione integrazioni CAD`,
     "about.li5": `Report e analisi dati con SQL`,
     "about.li6": `Laurea in Ing. Aerospaziale (in corso)`,
-    "exp.title": `<span class="keyword">class</span> <span class="class-name">Percorso</span> {`,
+
+    "exp.title": `Percorso`,
     "exp.role1.title": `Application Consultant — PLM/PDM`,
     "exp.role1.period": `in corso`,
     "exp.role1.place": `Italia (ibrido)`,
@@ -68,8 +77,9 @@ const I18N = {
     "exp.edu2.desc": `Basi di programmazione, database, sistemi e reti — la solida base tecnica dietro il lavoro su PLM e dati.`,
     "exp.lang.title": `Lingue`,
     "exp.lang.desc": `Italiano (madrelingua) · Inglese (tecnico/professionale)`,
-    "proj.title": `<span class="keyword">const</span> <span class="class-name">aree</span> = [`,
-    "proj.note": `Aree di intervento su cui lavoro ogni giorno. Alcuni dettagli sono coperti da riservatezza: referenze e casi concreti disponibili su richiesta.`,
+
+    "proj.title": `Progetti & aree di intervento`,
+    "proj.note": `Un progetto reale in evidenza e le aree su cui lavoro ogni giorno. Alcuni dettagli sono coperti da riservatezza: referenze disponibili su richiesta.`,
     "proj.fp.eyebrow": `Progetto in evidenza`,
     "proj.fp.title": `Unique Beauty Lab — sito + prenotazioni online`,
     "proj.fp.desc": `Sito web e sistema di prenotazione per un centro estetico: catalogo trattamenti con durata e prezzo, scelta di giorno e ora sulle disponibilità reali, conferma e aggiunta al calendario. Sviluppato end-to-end e online in produzione.`,
@@ -90,82 +100,96 @@ const I18N = {
     "proj.c5.desc": `Query, viste e report personalizzati su database PLM per estrarre dati affidabili e supportare le decisioni.`,
     "proj.c6.title": `Supporto & Troubleshooting`,
     "proj.c6.desc": `Analisi incidenti, root cause, documentazione e supporto continuativo su ambienti PLM/PDM e IT correlati.`,
-    "skills.title": `<span class="keyword">const</span> <span class="class-name">competenze</span> = {`,
+
+    "skills.title": `Competenze`,
     "skills.plm.1": `Processi PLM`,
     "skills.plm.2": `Workflow & ECM`,
     "skills.plm.3": `Gestione modifiche`,
     "skills.plm.4": `Configurazione`,
+    "skills.data.title": `Dati`,
     "skills.data.1": `Modellazione dati`,
     "skills.data.2": `Reporting`,
     "skills.data.3": `Analisi dati`,
     "skills.data.4": `Estrazione dati`,
+    "skills.eng.title": `CAD & Ingegneria`,
     "skills.eng.1": `Integrazione CAD`,
     "skills.eng.2": `Gestione BOM`,
     "skills.eng.3": `Anagrafiche tecniche`,
     "skills.eng.4": `Classificazione`,
+    "skills.it.title": `IT & Soft skills`,
     "skills.it.1": `Troubleshooting`,
     "skills.it.2": `System administration`,
     "skills.it.3": `Problem solving`,
     "skills.it.4": `Inglese tecnico`,
     "skills.it.5": `Documentazione`,
-    "contact.title": `<span class="keyword">function</span> <span class="class-name">contattami</span>() {`,
-    "contact.text": `Hai un progetto PLM/PDM, un ruolo da coprire o semplicemente vuoi confrontarti? Scrivimi.`,
-    "contact.tag": `Parliamone.`,
-    "contact.cta": `Salva il CV in PDF`,
-    "contact.company": `azienda`,
-    "contact.zone": `zona`,
+
+    "contact.title": `Contattami`,
+    "contact.text": `Hai un progetto IT o PLM/PDM, un ruolo da coprire o semplicemente vuoi confrontarti? Scrivimi.`,
+    "contact.cta": `Scrivimi una email`,
+    "contact.ctaCv": `Salva il CV in PDF`,
+    "contact.zone": `Zona`,
     "contact.zoneValue": `Italia · Disponibile in remoto`,
-    "footer.note": `echo "Costruito con codice & caffè"`,
-    "console.who": `Consulente Applicativo · PLM/PDM`,
+
+    "footer.role": `Application Consultant IT · PLM/PDM`,
+    "console.who": `Application Consultant IT · PLM/PDM`,
     "console.cta": `Cerchi collaborazione?`
   },
 
   en: {
-    metaTitle: `Siro Leon di Menna — PLM/PDM Application Consultant · PRO.FILE`,
-    metaDesc: `PLM/PDM Application Consultant specialised in PRO.FILE, with a computer-science background and ongoing aerospace engineering studies. BOM, master data, CAD integrations, workflows and SQL for manufacturing.`,
-    roles: [
-      `Application Consultant`,
-      `PLM/PDM Specialist`,
-      `PRO.FILE Expert`,
-      `BOM & Master Data`,
-      `CAD Integration`,
-      `SQL & Reporting`,
-      `Aerospace Engineering Student`
-    ],
+    metaTitle: `Siro Leon di Menna — IT Application Consultant · PLM/PDM`,
+    metaDesc: `IT Application Consultant specialised in PLM/PDM and PRO.FILE, with a computer-science background and ongoing aerospace engineering studies. BOM, master data, CAD integrations, workflows and SQL for manufacturing.`,
     "a11y.skip": `Skip to content`,
-    "boot.skip": `[ click to skip ]`,
-    "nav.about": `about`,
-    "nav.experience": `experience`,
-    "nav.projects": `work`,
-    "nav.skills": `skills`,
-    "nav.contact": `contact`,
-    "nav.status": `open to opportunities`,
-    "hero.badge": `APPLICATION CONSULTANT · PLM/PDM · @ MIRVE`,
-    "hero.desc": `PLM/PDM application consultant with a background in <span class="hl">computer science</span> and ongoing studies in <span class="hl-2">aerospace engineering</span>. I help manufacturing companies digitalise their technical processes — bills of materials (BOM), master data, CAD integrations and PLM workflows — backed by solid SQL and IT skills.`,
-    "hero.cta1": `Let's talk`,
-    "hero.cta2": `View experience`,
-    "hero.cta3": `CV as PDF`,
-    "fact.formation.label": `Education`,
-    "fact.formation.value": `Computer Science · Aerospace Eng.`,
+    "a11y.themeDark": `Switch to dark theme`,
+    "a11y.themeLight": `Switch to light theme`,
+
+    "brand.role": `Application Consultant · IT / PLM`,
+    "nav.about": `About`,
+    "nav.experience": `Experience`,
+    "nav.projects": `Work`,
+    "nav.skills": `Skills`,
+    "nav.contact": `Contact`,
+    "nav.cv": `Download CV`,
+
+    "hero.eyebrow": `Application Consultant · IT & PLM`,
+    "hero.role": `IT application consultant specialised in PLM/PDM (PRO.FILE).`,
+    "hero.desc": `Computer-science background and ongoing aerospace engineering studies. I help manufacturing companies digitalise their technical processes — bills of materials (BOM), master data, CAD integrations and PLM workflows — backed by solid SQL, data and IT skills.`,
+    "hero.cta1": `Get in touch`,
+    "hero.cta2": `Download CV`,
+
+    "fact.role.label": `Role`,
+    "fact.role.value": `Application Consultant`,
     "fact.focus.label": `Focus`,
     "fact.focus.value": `PLM/PDM · PRO.FILE`,
-    "fact.data.label": `Data`,
-    "fact.data.value": `SQL · Reporting`,
+    "fact.edu.label": `Education`,
+    "fact.edu.value": `Computer Science · Aerospace Eng.`,
     "fact.lang.label": `Languages`,
     "fact.lang.value": `Italian · English`,
-    "about.title": `<span class="keyword">class</span> <span class="class-name">AboutMe</span> {`,
-    "about.p1": `I am an <span class="hl">Application Consultant</span> specialised in <span class="hl">PLM/PDM</span> solutions, with a strong focus on <span class="hl-2">PRO.FILE</span> and the manufacturing industry.`,
-    "about.p2": `I help companies optimise their technical processes: from <span class="keyword">master data</span> and <span class="keyword">bills of materials (BOM)</span> to <span class="keyword">workflow configuration</span> and <span class="keyword">CAD integrations</span>.`,
-    "about.p3": `I come from a <span class="hl-2">computer science</span> background and I am continuing my studies in <span class="hl-2">aerospace engineering</span>: this mix lets me speak both the language of IT (SQL, data, integrations) and that of the engineering office (BOM, CAD, processes).`,
-    "about.p4": `I currently work as an <span class="hl">Application Consultant</span> at <a href="https://www.mirve.it" target="_blank" rel="noopener" class="external-link">Mirve</a>, where I implement PRO.FILE to support manufacturing companies in digitalising their technical processes.`,
-    "about.cardTitle": `Currently`,
+
+    "profile.role": `Application Consultant · PLM/PDM`,
+    "profile.available": `Available`,
+    "profile.company": `Company`,
+    "profile.focus": `Focus`,
+    "profile.data": `Data`,
+    "profile.edu": `Education`,
+    "profile.eduValue": `Computer Science · Aerospace Eng. (ongoing)`,
+    "profile.langs": `Languages`,
+    "profile.zone": `Location`,
+    "profile.zoneValue": `Italy · remote/hybrid`,
+
+    "about.title": `About me`,
+    "about.p1": `I am an <strong>IT Application Consultant</strong> specialised in <strong>PLM/PDM</strong> solutions, with a strong focus on <strong>PRO.FILE</strong> and the manufacturing industry.`,
+    "about.p2": `I help companies optimise their technical processes: from master data and bills of materials (BOM) to workflow configuration and CAD integrations.`,
+    "about.p3": `I come from a <strong>computer science</strong> background and I am continuing my studies in <strong>aerospace engineering</strong>: this mix lets me speak both the language of IT (SQL, data, integrations) and that of the engineering office (BOM, CAD, processes).`,
+    "about.p4": `I currently work as an Application Consultant at <a href="https://www.mirve.it" target="_blank" rel="noopener" class="link">Mirve</a>, where I implement PRO.FILE to support manufacturing companies in digitalising their technical processes.`,
+    "about.cardTitle": `At a glance`,
     "about.li1": `Application Consultant @ Mirve`,
     "about.li2": `Consulting on PLM/PDM projects`,
     "about.li3": `PRO.FILE environment configuration`,
     "about.li4": `CAD integration design`,
     "about.li5": `Reporting and data analysis with SQL`,
     "about.li6": `Aerospace Engineering degree (ongoing)`,
-    "exp.title": `<span class="keyword">class</span> <span class="class-name">Background</span> {`,
+
+    "exp.title": `Experience`,
     "exp.role1.title": `Application Consultant — PLM/PDM`,
     "exp.role1.period": `current`,
     "exp.role1.place": `Italy (hybrid)`,
@@ -183,8 +207,9 @@ const I18N = {
     "exp.edu2.desc": `Programming fundamentals, databases, systems and networks — the solid technical base behind my PLM and data work.`,
     "exp.lang.title": `Languages`,
     "exp.lang.desc": `Italian (native) · English (technical/professional)`,
-    "proj.title": `<span class="keyword">const</span> <span class="class-name">work</span> = [`,
-    "proj.note": `Areas I work on every day. Some details are confidential: references and concrete case studies available on request.`,
+
+    "proj.title": `Projects & areas of work`,
+    "proj.note": `A real project in the spotlight plus the areas I work on every day. Some details are confidential: references available on request.`,
     "proj.fp.eyebrow": `Featured project`,
     "proj.fp.title": `Unique Beauty Lab — website + online booking`,
     "proj.fp.desc": `Website and booking system for a beauty salon: treatment catalogue with duration and price, day and time selection based on real availability, confirmation and calendar sync. Built end-to-end and live in production.`,
@@ -205,49 +230,58 @@ const I18N = {
     "proj.c5.desc": `Queries, views and custom reports on PLM databases to extract reliable data and support decisions.`,
     "proj.c6.title": `Support & Troubleshooting`,
     "proj.c6.desc": `Incident analysis, root cause, documentation and ongoing support on PLM/PDM and related IT environments.`,
-    "skills.title": `<span class="keyword">const</span> <span class="class-name">skills</span> = {`,
+
+    "skills.title": `Skills`,
     "skills.plm.1": `PLM processes`,
     "skills.plm.2": `Workflow & ECM`,
     "skills.plm.3": `Change management`,
     "skills.plm.4": `Configuration`,
+    "skills.data.title": `Data`,
     "skills.data.1": `Data modelling`,
     "skills.data.2": `Reporting`,
     "skills.data.3": `Data analysis`,
     "skills.data.4": `Data extraction`,
+    "skills.eng.title": `CAD & Engineering`,
     "skills.eng.1": `CAD integration`,
     "skills.eng.2": `BOM management`,
     "skills.eng.3": `Technical master data`,
     "skills.eng.4": `Classification`,
+    "skills.it.title": `IT & Soft skills`,
     "skills.it.1": `Troubleshooting`,
     "skills.it.2": `System administration`,
     "skills.it.3": `Problem solving`,
     "skills.it.4": `Technical English`,
     "skills.it.5": `Documentation`,
-    "contact.title": `<span class="keyword">function</span> <span class="class-name">contactMe</span>() {`,
-    "contact.text": `Got a PLM/PDM project, a role to fill, or just want to connect? Drop me a line.`,
-    "contact.tag": `Let's talk.`,
-    "contact.cta": `Save CV as PDF`,
-    "contact.company": `company`,
-    "contact.zone": `location`,
+
+    "contact.title": `Contact`,
+    "contact.text": `Got an IT or PLM/PDM project, a role to fill, or just want to connect? Drop me a line.`,
+    "contact.cta": `Send me an email`,
+    "contact.ctaCv": `Save CV as PDF`,
+    "contact.zone": `Location`,
     "contact.zoneValue": `Italy · Available remotely`,
-    "footer.note": `echo "Built with code & coffee"`,
-    "console.who": `Application Consultant · PLM/PDM`,
+
+    "footer.role": `IT Application Consultant · PLM/PDM`,
+    "console.who": `IT Application Consultant · PLM/PDM`,
     "console.cta": `Looking to collaborate?`
   }
 };
 
-/* ---------------- STATE ---------------- */
+/* ---------------- HELPERS ---------------- */
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 const SUPPORTED = ['it', 'en'];
+
 function detectLang() {
-  const saved = localStorage.getItem('siro-lang');
-  if (saved && SUPPORTED.includes(saved)) return saved;
+  try {
+    const saved = localStorage.getItem('siro-lang');
+    if (saved && SUPPORTED.includes(saved)) return saved;
+  } catch (e) { /* ignore */ }
   const nav = (navigator.language || 'it').slice(0, 2).toLowerCase();
   return nav === 'en' ? 'en' : 'it';
 }
-let currentLang = detectLang();
 
-const $ = (sel, root = document) => root.querySelector(sel);
-const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+let currentLang = detectLang();
+let currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
 
 /* ---------------- APPLY LANGUAGE ---------------- */
 function applyLang(lang, persist = true) {
@@ -276,92 +310,30 @@ function applyLang(lang, persist = true) {
     toggle.setAttribute('aria-label', lang === 'it' ? 'Switch to English' : 'Passa all\'italiano');
   }
 
-  if (persist) localStorage.setItem('siro-lang', lang);
-
-  startTypewriter();
+  updateThemeLabel();
+  if (persist) { try { localStorage.setItem('siro-lang', lang); } catch (e) {} }
   updateTime();
 }
 
-/* ---------------- TYPEWRITER ---------------- */
-const roleEl = $('#roleText');
-let typeTimer = null;
-let roleIdx = 0, charIdx = 0, deleting = false;
-
-function startTypewriter() {
-  if (!roleEl) return;
-  clearTimeout(typeTimer);
-  roleIdx = 0; charIdx = 0; deleting = false;
-  roleEl.textContent = '';
-  typeTimer = setTimeout(typeRole, 600);
+/* ---------------- THEME ---------------- */
+function applyTheme(theme, persist = true) {
+  currentTheme = theme === 'dark' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  if (persist) { try { localStorage.setItem('siro-theme', currentTheme); } catch (e) {} }
+  updateThemeLabel();
 }
 
-function typeRole() {
-  const roles = I18N[currentLang].roles;
-  const current = roles[roleIdx % roles.length];
-  if (!deleting) {
-    roleEl.textContent = current.substring(0, charIdx + 1);
-    charIdx++;
-    if (charIdx === current.length) {
-      deleting = true;
-      typeTimer = setTimeout(typeRole, 1600);
-      return;
-    }
-  } else {
-    roleEl.textContent = current.substring(0, charIdx - 1);
-    charIdx--;
-    if (charIdx === 0) {
-      deleting = false;
-      roleIdx = (roleIdx + 1) % roles.length;
-    }
-  }
-  typeTimer = setTimeout(typeRole, deleting ? 35 : 70);
-}
-
-/* ---------------- BOOT SEQUENCE ---------------- */
-function runBoot() {
-  const bootScreen = $('#bootScreen');
-  const bootText = $('#bootText');
-  if (!bootScreen || !bootText) return;
-
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const hide = () => {
-    bootScreen.classList.add('hidden');
-    setTimeout(() => { bootScreen.style.display = 'none'; }, 700);
-  };
-
-  if (prefersReduced) { hide(); return; }
-
-  const lines = [
-    '[ OK ] Inizializzazione sistema...',
-    '[ OK ] Caricamento moduli profilo...',
-    '[ OK ] Montaggio driver PLM/PDM...',
-    '[ OK ] Connessione al DB manifatturiero...',
-    '[ OK ] Sequenza di avvio completata.',
-    '',
-    'Benvenuto in siro.profilo — v3.0',
-    ''
-  ];
-
-  let i = 0;
-  (function typeBoot() {
-    if (i < lines.length) {
-      bootText.textContent += lines[i] + '\n';
-      i++;
-      setTimeout(typeBoot, 120);
-    } else {
-      setTimeout(hide, 500);
-    }
-  })();
-
-  bootScreen.addEventListener('click', hide, { once: true });
-  // Failsafe: never block content for more than 2.6s
-  setTimeout(hide, 2600);
+function updateThemeLabel() {
+  const btn = $('#themeToggle');
+  if (!btn) return;
+  const dict = I18N[currentLang];
+  btn.setAttribute('aria-label', currentTheme === 'dark' ? dict['a11y.themeLight'] : dict['a11y.themeDark']);
 }
 
 /* ---------------- REVEAL ON SCROLL ---------------- */
 function setupReveal() {
   const targets = $$('.section, .hero');
-  if (!('IntersectionObserver' in window)) {
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     targets.forEach(el => el.classList.add('visible'));
     return;
   }
@@ -372,22 +344,21 @@ function setupReveal() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.1 });
   targets.forEach(el => { el.classList.add('reveal'); observer.observe(el); });
 }
 
 /* ---------------- NAV HIGHLIGHT ---------------- */
 function setupNavHighlight() {
-  const navLinks = $$('.nav-links a');
-  const sections = $$('.section, .hero');
+  const navLinks = $$('.nav a');
+  const sections = $$('main .section, main .hero');
   const onScroll = () => {
     let current = '';
     sections.forEach(sec => {
-      if (window.scrollY >= sec.offsetTop - 150) current = sec.id;
+      if (window.scrollY >= sec.offsetTop - 160) current = sec.id;
     });
     navLinks.forEach(a => {
-      const active = a.getAttribute('href') === '#' + current;
-      a.style.color = active ? 'var(--accent)' : '';
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
     });
   };
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -412,17 +383,9 @@ function setupMobileMenu() {
     toggle.setAttribute('aria-label', open ? 'Chiudi menu' : 'Apri menu');
   });
 
-  menu.addEventListener('click', e => {
-    if (e.target.closest('a')) close();
-  });
-
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') close();
-  });
-
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 900) close();
-  });
+  menu.addEventListener('click', e => { if (e.target.closest('a')) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  window.addEventListener('resize', () => { if (window.innerWidth > 860) close(); });
 }
 
 /* ---------------- LIVE TIME ---------------- */
@@ -430,74 +393,43 @@ function updateTime() {
   const el = $('#liveTime');
   if (!el) return;
   const now = new Date();
-  const locale = currentLang === 'en' ? 'en-GB' : 'it-IT';
   const hh = String(now.getHours()).padStart(2, '0');
   const mm = String(now.getMinutes()).padStart(2, '0');
   const ss = String(now.getSeconds()).padStart(2, '0');
   el.textContent = currentLang === 'en'
     ? `Local time ${hh}:${mm}:${ss}`
     : `Ora locale ${hh}:${mm}:${ss}`;
-  void locale;
 }
 
 /* ---------------- PRINT / CV ---------------- */
 function setupPrint() {
-  $$('.js-print-cv').forEach(btn => {
-    btn.addEventListener('click', () => window.print());
-  });
-}
-
-/* ---------------- KONAMI EASTER EGG ---------------- */
-function setupKonami() {
-  const konami = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
-  let idx = 0;
-  window.addEventListener('keydown', (e) => {
-    const key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
-    if (key === konami[idx]) {
-      idx++;
-      if (idx === konami.length) { activateEasterEgg(); idx = 0; }
-    } else {
-      idx = 0;
-    }
-  });
-}
-
-function activateEasterEgg() {
-  document.body.style.transition = 'filter 0.5s';
-  document.body.style.filter = 'hue-rotate(180deg)';
-  setTimeout(() => { document.body.style.filter = 'hue-rotate(360deg)'; }, 800);
-  setTimeout(() => { document.body.style.filter = ''; document.body.style.transition = ''; }, 2000);
-  console.log('%c★ KONAMI CODE ACTIVATED ★', 'color:#00d9ff;font-size:24px;font-weight:bold;text-shadow:0 0 10px #00d9ff');
+  $$('.js-print-cv').forEach(btn => btn.addEventListener('click', () => window.print()));
 }
 
 /* ---------------- CONSOLE BANNER ---------------- */
 function consoleBanner() {
   const d = I18N[currentLang];
-  console.log('%c┌─────────────────────────────────────────┐', 'color:#00d9ff');
-  console.log('%c│  SIRO LEON DI MENNA — PORTFOLIO v3.0    │', 'color:#00d9ff;font-weight:bold');
-  console.log(`%c│  ${d['console.who'].padEnd(39)}│`, 'color:#a855f7');
-  console.log(`%c│  ${d['console.cta'].padEnd(39)}│`, 'color:#00ff88');
-  console.log('%c│  → sdimenna01@gmail.com                 │', 'color:#00ff88');
-  console.log('%c└─────────────────────────────────────────┘', 'color:#00d9ff');
+  console.log('%cSiro Leon di Menna — portfolio v4', 'color:#4f46e5;font-weight:bold;font-size:13px');
+  console.log('%c' + d['console.who'], 'color:#0ea5e9');
+  console.log('%c' + d['console.cta'] + '  →  sdimenna01@gmail.com', 'color:#059669');
 }
 
 /* ---------------- INIT ---------------- */
 document.addEventListener('DOMContentLoaded', () => {
-  runBoot();
   setupReveal();
   setupNavHighlight();
   setupMobileMenu();
   setupPrint();
-  setupKonami();
 
   const langToggle = $('#langToggle');
-  if (langToggle) {
-    langToggle.addEventListener('click', () => {
-      applyLang(currentLang === 'it' ? 'en' : 'it');
-    });
-  }
+  if (langToggle) langToggle.addEventListener('click', () => applyLang(currentLang === 'it' ? 'en' : 'it'));
+
+  const themeToggle = $('#themeToggle');
+  if (themeToggle) themeToggle.addEventListener('click', () => applyTheme(currentTheme === 'dark' ? 'light' : 'dark'));
 
   applyLang(currentLang, false);
+  applyTheme(currentTheme, false);
   consoleBanner();
+  updateTime();
   setInterval(updateTime, 1000);
 });
