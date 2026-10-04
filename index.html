@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Siro Leon di Menna — Application Consultant IT · PLM/PDM</title>
-  <meta name="description" content="Application Consultant IT specializzato in PLM/PDM e PRO.FILE. Background in informatica, studi in ingegneria aerospaziale. BOM, anagrafiche, integrazioni CAD, workflow e SQL per il manifatturiero." />
+  <meta name="description" content="Application Consultant IT specializzato in PLM/PDM e PRO.FILE. Background informatico, studi in ingegneria aerospaziale. BOM, integrazioni CAD, workflow, SQL Server e C# per il manifatturiero." />
   <meta name="author" content="Siro Leon di Menna" />
   <meta name="keywords" content="Application Consultant, IT, PLM, PDM, PRO.FILE, BOM, distinta base, integrazione CAD, SQL, workflow, ECM, manifatturiero, ingegneria aerospaziale, informatica" />
   <meta name="robots" content="index, follow" />
@@ -16,7 +16,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Siro Leon di Menna — Application Consultant IT · PLM/PDM" />
-  <meta property="og:description" content="Consulente applicativo IT con specializzazione PLM/PDM (PRO.FILE). Digitalizzazione dei processi tecnici nel manifatturiero." />
+  <meta property="og:description" content="Consulente applicativo IT con specializzazione PLM/PDM (PRO.FILE), SQL Server e C#. Digitalizzazione dei processi tecnici nel manifatturiero." />
   <meta property="og:url" content="https://sdimenna.github.io/siro-portfolio/" />
   <meta property="og:site_name" content="Siro Leon di Menna" />
   <meta property="og:locale" content="it_IT" />
@@ -75,8 +75,12 @@
       </nav>
 
       <div class="header-actions">
-        <button class="tbtn lang" id="langToggle" type="button" aria-label="Switch language">EN</button>
-        <button class="tbtn js-print-cv js-only" type="button" data-i18n="nav.cv">Scarica CV</button>
+        <div class="lang-switch" role="group" aria-label="Lingua">
+          <button class="tbtn lang" type="button" data-lang="it" aria-pressed="true">IT</button>
+          <button class="tbtn lang" type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button class="tbtn lang" type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a class="tbtn js-only" href="assets/CV-Siro-Leon-di-Menna.pdf" download="CV-Siro-Leon-di-Menna.pdf" data-i18n="nav.cv">Scarica CV</a>
         <button class="burger" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Apri menu">
           <span></span><span></span><span></span>
         </button>
@@ -99,7 +103,7 @@
         <h1 class="hero-display">Siro Leon<br>di Menna</h1>
 
         <div class="hero-lower">
-          <p class="hero-role" data-i18n="hero.role">Consulente applicativo IT specializzato in PLM/PDM (PRO.FILE).</p>
+          <p class="hero-role" data-i18n="hero.role">Consulente applicativo IT — PLM/PDM (PRO.FILE), SQL Server &amp; C#.</p>
           <p class="hero-desc" data-i18n="hero.desc">
             Background in informatica e studi in ingegneria aerospaziale. Aiuto le aziende manifatturiere
             a digitalizzare i processi tecnici — distinte base (BOM), anagrafiche, integrazioni CAD e
@@ -109,7 +113,7 @@
 
         <div class="hero-cta">
           <a href="#contact" class="btn btn-solid" data-i18n="hero.cta1">Contattami</a>
-          <button class="btn btn-line js-print-cv js-only" type="button" data-i18n="hero.cta2">Scarica CV</button>
+          <a class="btn btn-line js-only" href="assets/CV-Siro-Leon-di-Menna.pdf" download="CV-Siro-Leon-di-Menna.pdf" data-i18n="hero.cta2">Scarica CV</a>
           <a href="https://github.com/Sdimenna" target="_blank" rel="noopener" class="btn btn-line">GitHub ↗</a>
         </div>
 
@@ -117,7 +121,7 @@
           <div><dt data-i18n="fact.role.label">Ruolo</dt><dd data-i18n="fact.role.value">Application Consultant</dd></div>
           <div><dt data-i18n="fact.focus.label">Focus</dt><dd data-i18n="fact.focus.value">PLM/PDM · PRO.FILE</dd></div>
           <div><dt data-i18n="fact.edu.label">Formazione</dt><dd data-i18n="fact.edu.value">Informatica · Ing. Aerospaziale</dd></div>
-          <div><dt data-i18n="fact.lang.label">Lingue</dt><dd data-i18n="fact.lang.value">Italiano · English</dd></div>
+          <div><dt data-i18n="fact.lang.label">Lingue</dt><dd data-i18n="fact.lang.value">Italiano · Español · English</dd></div>
         </dl>
       </div>
     </section>
@@ -143,7 +147,7 @@
             <div class="meta-row"><span data-i18n="meta.focus">Focus</span><span>PLM / PDM · PRO.FILE</span></div>
             <div class="meta-row"><span data-i18n="meta.data">Dati</span><span>SQL · Reporting</span></div>
             <div class="meta-row"><span data-i18n="meta.edu">Formazione</span><span data-i18n="meta.eduValue">Informatica · Ing. Aerospaziale (in corso)</span></div>
-            <div class="meta-row"><span data-i18n="meta.langs">Lingue</span><span>Italiano · English</span></div>
+            <div class="meta-row"><span data-i18n="meta.langs">Lingue</span><span data-i18n="meta.langsValue">Italiano · Español · English</span></div>
             <div class="meta-row"><span data-i18n="meta.zone">Zona</span><span data-i18n="meta.zoneValue">Italia · remoto/ibrido</span></div>
           </aside>
         </div>
@@ -162,8 +166,8 @@
         <div class="rows">
           <article class="row">
             <div class="row-key">
-              <span class="row-period" data-i18n="exp.role1.period">in corso</span>
-              <span class="row-place" data-i18n="exp.role1.place">Italia (ibrido)</span>
+              <span class="row-period" data-i18n="exp.role1.period">Set 2024 — oggi</span>
+              <span class="row-place" data-i18n="exp.role1.place">Thiene (VI) · ibrido</span>
             </div>
             <div class="row-body">
               <h3 data-i18n="exp.role1.title">Application Consultant — PLM/PDM</h3>
@@ -174,29 +178,53 @@
                 <li data-i18n="exp.role1.b3">Progettazione e setup di integrazioni tra PLM e sistemi CAD.</li>
                 <li data-i18n="exp.role1.b4">Configurazione di workflow di approvazione, rilascio e gestione modifiche (ECM).</li>
                 <li data-i18n="exp.role1.b5">Report ed estrazioni dati su SQL a supporto dell'ufficio tecnico.</li>
+                <li data-i18n="exp.role1.b6">Gestione connettori tra PLM ed ERP e formazione degli utenti.</li>
               </ul>
-              <p class="tags" data-i18n="exp.role1.tags">PRO.FILE · PLM · PDM · BOM · CAD · SQL · Workflow</p>
+              <p class="tags" data-i18n="exp.role1.tags">PRO.FILE · PLM · PDM · BOM · CAD · SQL Server · C#</p>
             </div>
           </article>
 
           <article class="row">
             <div class="row-key">
-              <span class="row-period" data-i18n="exp.edu1.period">in corso</span>
+              <span class="row-period" data-i18n="exp.edu1.period">Ott 2021 — in corso</span>
             </div>
             <div class="row-body">
               <h3 data-i18n="exp.edu1.title">Laurea in Ingegneria Aerospaziale</h3>
-              <p class="row-org" data-i18n="exp.edu1.org">Università · Italia</p>
+              <p class="row-org" data-i18n="exp.edu1.org">Università degli Studi di Padova</p>
               <p class="row-desc" data-i18n="exp.edu1.desc">Meccanica del volo, aerodinamica, strutture, sistemi.</p>
             </div>
           </article>
 
           <article class="row">
             <div class="row-key">
-              <span class="row-period" data-i18n="exp.edu2.period">completato</span>
+              <span class="row-period" data-i18n="exp.edu2.period">2015 — 2021</span>
             </div>
             <div class="row-body">
-              <h3 data-i18n="exp.edu2.title">Percorso in Informatica</h3>
-              <p class="row-desc" data-i18n="exp.edu2.desc">Basi di programmazione, database, sistemi e reti — la solida base tecnica dietro il lavoro su PLM e dati.</p>
+              <h3 data-i18n="exp.edu2.title">Diploma di Perito Informatico</h3>
+              <p class="row-org" data-i18n="exp.edu2.org">ITT Giacomo Chilesotti</p>
+              <p class="row-desc" data-i18n="exp.edu2.desc">Sviluppo software (C#, C++, C, Java), database e reti, basi di web (HTML, CSS, JavaScript).</p>
+            </div>
+          </article>
+
+          <article class="row">
+            <div class="row-key">
+              <span class="row-period" data-i18n="exp.turo.period">Feb — Mar 2021</span>
+            </div>
+            <div class="row-body">
+              <h3 data-i18n="exp.turo.title">Gestione database</h3>
+              <p class="row-org" data-i18n="exp.turo.org">TURO ITALIA SPA</p>
+              <p class="row-desc" data-i18n="exp.turo.desc">Manutenzione e gestione dati all'interno del database aziendale.</p>
+            </div>
+          </article>
+
+          <article class="row">
+            <div class="row-key">
+              <span class="row-period" data-i18n="exp.omni.period">Lug — Ago 2019</span>
+            </div>
+            <div class="row-body">
+              <h3 data-i18n="exp.omni.title">Personale IT</h3>
+              <p class="row-org" data-i18n="exp.omni.org">OmniNet srl · Zanè (VI)</p>
+              <p class="row-desc" data-i18n="exp.omni.desc">Supporto tecnico e assistenza informatica.</p>
             </div>
           </article>
 
@@ -316,7 +344,11 @@
           </div>
           <div class="row row-skill">
             <h3 class="row-key-label" data-i18n="skills.data.title">Dati</h3>
-            <p class="skill-list" data-i18n="skills.data.list">SQL · Modellazione dati · Reporting · Analisi dati · Estrazione dati</p>
+            <p class="skill-list" data-i18n="skills.data.list">Microsoft SQL Server · T-SQL · Modellazione dati · Reporting · Analisi dati</p>
+          </div>
+          <div class="row row-skill">
+            <h3 class="row-key-label" data-i18n="skills.dev.title">Sviluppo</h3>
+            <p class="skill-list" data-i18n="skills.dev.list">C# · C++ · C · Java · HTML · CSS · JavaScript</p>
           </div>
           <div class="row row-skill">
             <h3 class="row-key-label" data-i18n="skills.eng.title">CAD &amp; Ingegneria</h3>
@@ -324,7 +356,7 @@
           </div>
           <div class="row row-skill">
             <h3 class="row-key-label" data-i18n="skills.it.title">IT &amp; Soft skills</h3>
-            <p class="skill-list" data-i18n="skills.it.list">Troubleshooting · System administration · Problem solving · Inglese tecnico · Documentazione</p>
+            <p class="skill-list" data-i18n="skills.it.list">Troubleshooting · System administration · Help-desk &amp; supporto IT · Problem solving · Documentazione</p>
           </div>
         </div>
       </div>
@@ -345,7 +377,7 @@
           <a href="https://github.com/Sdimenna" target="_blank" rel="noopener" class="contact-link"><span>GitHub</span><strong>@Sdimenna</strong><span aria-hidden="true">↗</span></a>
           <div class="contact-link contact-link-static"><span data-i18n="contact.zone">Zona</span><strong data-i18n="contact.zoneValue">Italia · Disponibile in remoto</strong><span aria-hidden="true">◉</span></div>
         </div>
-        <button class="btn btn-solid js-print-cv js-only contact-cv" type="button" data-i18n="contact.ctaCv">Salva il CV in PDF</button>
+        <a class="btn btn-solid js-only contact-cv" href="assets/CV-Siro-Leon-di-Menna.pdf" download="CV-Siro-Leon-di-Menna.pdf" data-i18n="contact.ctaCv">Scarica il CV</a>
       </div>
     </section>
 
